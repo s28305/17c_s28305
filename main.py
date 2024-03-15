@@ -29,3 +29,15 @@ def e_roots(num_list):
 
 
 print(e_roots(x.square_list))
+
+
+# Task5: Exceptions
+class SquareGenerator:
+    def __init__(self, start, end):
+        if (start <= end):
+            self.square_list = [n ** 2 for n in range(start, end)]
+        else:
+            print("Invalid values inserted")
+
+
+x = SquareGenerator(21, 15)
