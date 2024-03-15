@@ -1,4 +1,5 @@
 import math
+from square_generator import SquareGenerator, CubicGenerator
 
 # Task1:ListComprehensions
 square_list = [n**2 for n in range(1, 11)]
@@ -41,3 +42,4 @@ class SquareGenerator:
 
 
 x = SquareGenerator(21, 15)
+
