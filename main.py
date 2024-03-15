@@ -41,3 +41,5 @@ class SquareGenerator:
 
 
 x = SquareGenerator(21, 15)
+
+# Task6: Modules
