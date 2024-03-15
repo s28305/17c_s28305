@@ -1,3 +1,5 @@
+import math
+
 # Task1:ListComprehensions
 square_list = [n**2 for n in range(1, 11)]
 print(square_list)
@@ -19,3 +21,11 @@ class SquareGenerator:
 
 x = SquareGenerator(1, 15)
 print(x.square_list)
+
+
+# Task4: Libraries
+def e_roots(num_list):
+    return [math.sqrt(n) for n in num_list]
+
+
+print(e_roots(x.square_list))
