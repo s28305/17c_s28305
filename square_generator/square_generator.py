@@ -7,7 +7,7 @@ class SquareGenerator:
         if start <= end:
             self.square_list = [n ** 2 for n in range(start, end)]
         else:
-            raise ValueError("Invalid values inserted")
+            raise ValueError("Invalid values inserted.")
 
 
 # Task8:Inheritance
@@ -68,7 +68,7 @@ class CubicGenerator(SquareGenerator):
         if start <= end:
             return [n ** 2 for n in range(start, end)]
         else:
-            raise ValueError("Start value needs to be less or equal to the end")
+            raise ValueError("Start value needs to be less or equal to the end value")
 
 
 cubic_y = CubicGenerator()
