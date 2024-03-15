@@ -1,3 +1,6 @@
+from abc import ABC, abstractmethod
+
+
 # Task 6: Modules
 class SquareGenerator:
     def __init__(self, start, end):
@@ -45,3 +48,28 @@ class CubicGenerator(SquareGenerator):
             return [n ** 2 for n in range(start, end)]
         else:
             raise ValueError("Start value needs to be less or equal to the end")
+
+
+# Task10: Abstract Elements
+class SquareGenerator(ABC):
+    @abstractmethod
+    def generate_squares(self, start, end):
+        pass
+
+
+class CubicGenerator(SquareGenerator):
+    def generate_cubes(self, start, end):
+        if start <= end:
+            return [n ** 3 for n in range(start, end)]
+        else:
+            raise ValueError("Invalid values inserted")
+
+    def generate_squares(self, start, end):
+        if start <= end:
+            return [n ** 2 for n in range(start, end)]
+        else:
+            raise ValueError("Start value needs to be less or equal to the end")
+
+
+cubic_y = CubicGenerator()
+print("Squares:", cubic_y.generate_squares(1, 7))
